@@ -1,0 +1,18 @@
+# NetCDF binary files
+*.nc
+*.zarr
+
+## Other Croco Outputs
+namelist*
+ncjoin
+partit
+
+## Python Output
+*.ipynb
+*.txt.1
+
+##Supplimentary Directories
+/Compile
+/MUSTANG_NAMELIST
+
+
