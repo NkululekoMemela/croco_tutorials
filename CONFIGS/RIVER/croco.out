@@ -1,0 +1,22 @@
+
+ 	Basin Example
+      3240  ntimes   Total number of timesteps for 3D equations.
+   9600.00  dt       Timestep [sec] for 3D equations
+        65  ndtfast  Number of 2D timesteps within each 3D step.
+         1  ninfo    Number of timesteps between runtime diagnostics.
+
+ 1.000E+00  theta_s  S-coordinate surface control parameter.
+ 0.000E+00  theta_b  S-coordinate bottom control parameter.
+ 1.000E+01  Tcline   S-coordinate surface/bottom layer width used in
+                                vertical coordinate stretching, meters.
+       Restart File:  basin_rst.nc    nrst =******    rec/file:   -1
+       History File:  basin_his.nc  Create new: T  nwrt =  90  rec/file =  0
+
+ WARNING: Unrecognized keyword: averages  --> DISREGARDED.
+
+
+ READ_INP ERROR while reading block with keyword 'primary_history_fields'.
+
+
+ READ_INP ERROR: A total of  1 configuration errors discovered.
+

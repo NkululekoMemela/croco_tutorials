@@ -8,6 +8,8 @@
 namelist*
 ncjoin
 partit
+namelist*
+kRGB*
 
 ## Python Output
 *.ipynb
