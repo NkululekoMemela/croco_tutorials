@@ -1,3 +1,5 @@
+*.swp
+
 # NetCDF binary files
 *.nc
 *.zarr
