@@ -1,0 +1,7 @@
+1  Ftitle (a80)
+CORIOLIS example
+2  Ft0,   Fx0,   Fy0,     Fz0, Fgrd,Fcoor,Ftype,Fcount, Fdt,   Fdx,   Fdy,   Fdz
+  0.0     10     10       -0.0   0   0    0    1       0.00   0.000   0.000   0.0
+  0.0     20     20       -0.0   0   0    0    1       0.00   0.000   0.000   0.0
+  0.0     30     30       -0.0   0   0    0    1       0.00   0.000   0.000   0.0
+99 END of float input data
