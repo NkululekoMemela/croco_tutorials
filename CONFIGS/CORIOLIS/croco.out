@@ -1,0 +1,880 @@
+
+ CORIOLIS
+       432  ntimes   Total number of timesteps for 3D equations.
+    200.00  dt       Timestep [sec] for 3D equations
+        50  ndtfast  Number of 2D timesteps within each 3D step.
+         1  ninfo    Number of timesteps between runtime diagnostics.
+
+ 6.000E+00  theta_s  S-coordinate surface control parameter.
+ 0.000E+00  theta_b  S-coordinate bottom control parameter.
+ 1.000E+01  Tcline   S-coordinate surface/bottom layer width used in
+                                vertical coordinate stretching, meters.
+
+ WARNING: Unrecognized keyword: grid  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: forcing  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: bulk_forcing  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: climatology  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: boundary  --> DISREGARDED.
+
+       Restart File:  output/rst.nc    nrst =   432    rec/file:    0
+       History File:  output/his.nc  Create new: T  nwrt =  18  rec/file =  0
+
+ WARNING: Unrecognized keyword: averages  --> DISREGARDED.
+
+
+ Fields to be saved in history file: (T/F)
+      T  write zeta  free-surface.
+      T  write UBAR  2D U-momentum component.
+      T  write VBAR  2D V-momentum component.
+      T  write U     3D U-momentum component.
+      T  write V     3D V-momentum component.
+      T  write T( 1)  Tracer of index 1.
+
+      T  write RHO   Density anomaly.
+      F  write Omega Omega vertical velocity.
+      F  write W     True vertical velocity.
+      F  write Akv   Vertical viscosity.
+      F  write Akt   Vertical diffusivity for temperature.
+      F  write Bostr Bottom Stress.
+      F  write Bustr U-Bottom Stress.
+      F  write Bvstr V-Bottom Stress.
+
+      F  write Wstress Wind Stress.
+      F  write U-Wstress comp. U-Wind Stress.
+      F  write V-Wstress comp. V-Wind Stress.
+      F  write Shflx [W/m2] Surface net heat flux
+      F  write Shflx_rsw [W/m2] Short-wave surface radiation
+
+
+ WARNING: Unrecognized keyword: gls_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: primary_averages  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: auxiliary_averages  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: gls_averages  --> DISREGARDED.
+
+ 1025.0000  rho0     Boussinesq approximation mean density, kg/m3.
+
+ WARNING: Unrecognized keyword: lateral_visc  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: tracer_diff2  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: tracer_diff4  --> DISREGARDED.
+
+ 0.000E+00  Akv_bak    Background vertical viscosity coefficient, m2/s.
+ 0.000E+00  Akt_bak( 1) Background vertical mixing coefficient, m2/s,
+                                for tracer  1.
+ 0.000E+00  rdrg     Linear bottom drag coefficient (m/si).
+ 0.000E+00  rdrg2    Quadratic bottom drag coefficient.
+ 0.000E+00  Zobt     Bottom roughness for logarithmic law (m).
+ 1.000E-04  Cdb_min  Minimum bottom drag coefficient.
+ 1.000E-01  Cdb_max  Maximum bottom drag coefficient.
+
+      1.00  gamma2   Slipperiness parameter: free-slip +1, or no-slip -1.
+   20.0000  T0       Background value for potential temperature (Celsius).
+    0.0000  S0       Background salinity (PSU), constant.
+   30.0000  R0       Background density (kg/m3) used in linear EOS.
+    0.2800  Tcoef    Thermal expansion coefficient (kg/m3/Celsius).
+    0.0000  Scoef    Saline contraction coefficient (kg/m3/PSU).
+
+
+ WARNING: Unrecognized keyword: sponge  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: nudg_cof  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagnostics  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diag_avg  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diag3D_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diag2D_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diag3D_average_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diag2D_average_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagnosticsM  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagM_avg  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagM_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagM_average_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagnostics_bio  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbio_avg  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbioFlux_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbioVSink_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbioGasExc_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbioFlux_average_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbioVSink_average_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: diagbioGasExc_average_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: biology  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: sediments  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: sediment_history_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: bbl_history_fields  --> DISREGARDED.
+
+         Float File:  output/floats.nc  Create new: T  nflt =   3  rec/file =  0
+
+ Fields to be saved in floats output file: (T/F)
+      T  write Grid location variables
+      T  write temperature.
+      T  write salinity.
+      T  write density.
+      T  write mean float velocity
+
+ WARNING: Unrecognized keyword: stations  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: station_fields  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: psource  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: psource_ncfile  --> DISREGARDED.
+
+
+ WARNING: Unrecognized keyword: online  --> DISREGARDED.
+
+
+ Activated C-preprocessing Options:
+
+          CORIOLIS
+          SOLVE3D
+          UV_COR
+          ANA_GRID
+          ANA_INITIAL
+          ANA_SMFLUX
+          ANA_STFLUX
+          ANA_BTFLUX
+          EW_PERIODIC
+          NS_PERIODIC
+          FLOATS
+          NO_FRCFILE
+          MPI_COMM_WORLD
+          M2FILTER_POWER
+          TRACERS
+          TEMPERATURE
+          HZR
+          VAR_RHO_2D
+          RESET_RHO0
+          UV_HADV_UP3
+          UV_MIX_S
+          UV_VADV_SPLINES
+          TS_HADV_UP3
+          TS_MIX_S
+          NTRA_T3DMIX
+          TS_VADV_AKIMA
+          NF_CLOBBER
+
+
+ NUMBER OF THREADS:  1 BLOCKING:  1 x  1.
+
+ hmin        hmax         grdmin         grdmax         Cu_min      Cu_max
+  300.000000   300.000000  0.731707317E+02  0.731707317E+02  4.19404149  4.19404149
+   volume= 2.700000000000041961670E+09   open_cross= 0.000000000000000000000E+00
+
+
+ Vertical S-coordinate System:
+
+ level   S-coord     Cs-curve          at_hmin  over_slope     at_hmax
+
+    16   0.0000000   0.0000000           0.000       0.000       0.000
+    15  -0.0625000  -0.0019030          -1.177      -1.177      -1.177
+    14  -0.1250000  -0.0040767          -2.432      -2.432      -2.432
+    13  -0.1875000  -0.0068304          -3.856      -3.856      -3.856
+    12  -0.2500000  -0.0105560          -5.561      -5.561      -5.561
+    11  -0.3125000  -0.0157835          -7.702      -7.702      -7.702
+    10  -0.3750000  -0.0232566         -10.494     -10.494     -10.494
+     9  -0.4375000  -0.0340388         -14.246     -14.246     -14.246
+     8  -0.5000000  -0.0496640         -19.403     -19.403     -19.403
+     7  -0.5625000  -0.0723554         -26.608     -26.608     -26.608
+     6  -0.6250000  -0.1053416         -36.799     -36.799     -36.799
+     5  -0.6875000  -0.1533158         -51.337     -51.337     -51.337
+     4  -0.7500000  -0.2231040         -72.200     -72.200     -72.200
+     3  -0.8125000  -0.3246355        -102.269    -102.269    -102.269
+     2  -0.8750000  -0.4723564        -145.733    -145.733    -145.733
+     1  -0.9375000  -0.6872846        -208.688    -208.688    -208.688
+     0  -1.0000000  -1.0000000        -300.000    -300.000    -300.000
+
+ Time splitting: ndtfast = 50    nfast = 68
+
+ Maximum grid stiffness ratios:   rx0 =   0.0000000000000000      rx1 =   0.0000000000000000     
+ 1030.0000  rho0     Reset Boussinesq approximation mean density, kg/m3.
+
+ (CORIOLIS example)
+
+
+       3    nfloats      Number of float trajectories to compute.
+
+      DEF_FLOATS - Created new netCDF file 'output/floats.nc'.
+      WRT_FLT -- wrote float history fields into time record =   1 /   1
+      DEF_HIS/AVG - Created new netCDF file 'output/his.nc'.
+      WRT_GRID -- wrote grid data into file 'output/his.nc'.
+      WRT_HIS -- wrote history fields into time record =   1 /   1
+
+ MAIN: started time-stepping
+
+ STEP   time[DAYS] KINETIC_ENRG    POTEN_ENRG    TOTAL_ENRG    NET_VOLUME   trd
+       0     0.00000 1.000000000E+00 0.0000000E+00 1.0000000E+00 2.7000000E+09  0
+       1     0.00231 9.999817555E-01 0.0000000E+00 9.9998176E-01 2.7000000E+09  0
+       2     0.00463 9.999635114E-01 0.0000000E+00 9.9996351E-01 2.7000000E+09  0
+       3     0.00694 9.999452676E-01 0.0000000E+00 9.9994527E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   2 /   2
+       4     0.00926 9.999270242E-01 0.0000000E+00 9.9992702E-01 2.7000000E+09  0
+       5     0.01157 9.999087810E-01 0.0000000E+00 9.9990878E-01 2.7000000E+09  0
+       6     0.01389 9.998905382E-01 0.0000000E+00 9.9989054E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   3 /   3
+       7     0.01620 9.998722958E-01 0.0000000E+00 9.9987230E-01 2.7000000E+09  0
+       8     0.01852 9.998540536E-01 0.0000000E+00 9.9985405E-01 2.7000000E+09  0
+       9     0.02083 9.998358118E-01 0.0000000E+00 9.9983581E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   4 /   4
+      10     0.02315 9.998175704E-01 0.0000000E+00 9.9981757E-01 2.7000000E+09  0
+      11     0.02546 9.997993293E-01 0.0000000E+00 9.9979933E-01 2.7000000E+09  0
+      12     0.02778 9.997810885E-01 0.0000000E+00 9.9978109E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   5 /   5
+      13     0.03009 9.997628480E-01 0.0000000E+00 9.9976285E-01 2.7000000E+09  0
+      14     0.03241 9.997446079E-01 0.0000000E+00 9.9974461E-01 2.7000000E+09  0
+      15     0.03472 9.997263681E-01 0.0000000E+00 9.9972637E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   6 /   6
+      16     0.03704 9.997081286E-01 0.0000000E+00 9.9970813E-01 2.7000000E+09  0
+      17     0.03935 9.996898895E-01 0.0000000E+00 9.9968989E-01 2.7000000E+09  0
+      18     0.04167 9.996716507E-01 0.0000000E+00 9.9967165E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   2 /   2
+      WRT_FLT -- wrote float history fields into time record =   7 /   7
+      19     0.04398 9.996534122E-01 0.0000000E+00 9.9965341E-01 2.7000000E+09  0
+      20     0.04630 9.996351740E-01 0.0000000E+00 9.9963517E-01 2.7000000E+09  0
+      21     0.04861 9.996169362E-01 0.0000000E+00 9.9961694E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   8 /   8
+      22     0.05093 9.995986988E-01 0.0000000E+00 9.9959870E-01 2.7000000E+09  0
+      23     0.05324 9.995804616E-01 0.0000000E+00 9.9958046E-01 2.7000000E+09  0
+      24     0.05556 9.995622248E-01 0.0000000E+00 9.9956222E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =   9 /   9
+      25     0.05787 9.995439884E-01 0.0000000E+00 9.9954399E-01 2.7000000E+09  0
+      26     0.06019 9.995257522E-01 0.0000000E+00 9.9952575E-01 2.7000000E+09  0
+      27     0.06250 9.995075164E-01 0.0000000E+00 9.9950752E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  10 /  10
+      28     0.06481 9.994892809E-01 0.0000000E+00 9.9948928E-01 2.7000000E+09  0
+      29     0.06713 9.994710458E-01 0.0000000E+00 9.9947105E-01 2.7000000E+09  0
+      30     0.06944 9.994528110E-01 0.0000000E+00 9.9945281E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  11 /  11
+      31     0.07176 9.994345765E-01 0.0000000E+00 9.9943458E-01 2.7000000E+09  0
+      32     0.07407 9.994163424E-01 0.0000000E+00 9.9941634E-01 2.7000000E+09  0
+      33     0.07639 9.993981086E-01 0.0000000E+00 9.9939811E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  12 /  12
+      34     0.07870 9.993798751E-01 0.0000000E+00 9.9937988E-01 2.7000000E+09  0
+      35     0.08102 9.993616419E-01 0.0000000E+00 9.9936164E-01 2.7000000E+09  0
+      36     0.08333 9.993434091E-01 0.0000000E+00 9.9934341E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   3 /   3
+      WRT_FLT -- wrote float history fields into time record =  13 /  13
+      37     0.08565 9.993251766E-01 0.0000000E+00 9.9932518E-01 2.7000000E+09  0
+      38     0.08796 9.993069445E-01 0.0000000E+00 9.9930694E-01 2.7000000E+09  0
+      39     0.09028 9.992887127E-01 0.0000000E+00 9.9928871E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  14 /  14
+      40     0.09259 9.992704812E-01 0.0000000E+00 9.9927048E-01 2.7000000E+09  0
+      41     0.09491 9.992522500E-01 0.0000000E+00 9.9925225E-01 2.7000000E+09  0
+      42     0.09722 9.992340192E-01 0.0000000E+00 9.9923402E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  15 /  15
+      43     0.09954 9.992157887E-01 0.0000000E+00 9.9921579E-01 2.7000000E+09  0
+      44     0.10185 9.991975586E-01 0.0000000E+00 9.9919756E-01 2.7000000E+09  0
+      45     0.10417 9.991793288E-01 0.0000000E+00 9.9917933E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  16 /  16
+      46     0.10648 9.991610993E-01 0.0000000E+00 9.9916110E-01 2.7000000E+09  0
+      47     0.10880 9.991428701E-01 0.0000000E+00 9.9914287E-01 2.7000000E+09  0
+      48     0.11111 9.991246413E-01 0.0000000E+00 9.9912464E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  17 /  17
+      49     0.11343 9.991064128E-01 0.0000000E+00 9.9910641E-01 2.7000000E+09  0
+      50     0.11574 9.990881847E-01 0.0000000E+00 9.9908818E-01 2.7000000E+09  0
+      51     0.11806 9.990699568E-01 0.0000000E+00 9.9906996E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  18 /  18
+      52     0.12037 9.990517293E-01 0.0000000E+00 9.9905173E-01 2.7000000E+09  0
+      53     0.12269 9.990335022E-01 0.0000000E+00 9.9903350E-01 2.7000000E+09  0
+      54     0.12500 9.990152754E-01 0.0000000E+00 9.9901528E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   4 /   4
+      WRT_FLT -- wrote float history fields into time record =  19 /  19
+      55     0.12731 9.989970489E-01 0.0000000E+00 9.9899705E-01 2.7000000E+09  0
+      56     0.12963 9.989788227E-01 0.0000000E+00 9.9897882E-01 2.7000000E+09  0
+      57     0.13194 9.989605969E-01 0.0000000E+00 9.9896060E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  20 /  20
+      58     0.13426 9.989423714E-01 0.0000000E+00 9.9894237E-01 2.7000000E+09  0
+      59     0.13657 9.989241462E-01 0.0000000E+00 9.9892415E-01 2.7000000E+09  0
+      60     0.13889 9.989059214E-01 0.0000000E+00 9.9890592E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  21 /  21
+      61     0.14120 9.988876969E-01 0.0000000E+00 9.9888770E-01 2.7000000E+09  0
+      62     0.14352 9.988694727E-01 0.0000000E+00 9.9886947E-01 2.7000000E+09  0
+      63     0.14583 9.988512489E-01 0.0000000E+00 9.9885125E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  22 /  22
+      64     0.14815 9.988330254E-01 0.0000000E+00 9.9883303E-01 2.7000000E+09  0
+      65     0.15046 9.988148022E-01 0.0000000E+00 9.9881480E-01 2.7000000E+09  0
+      66     0.15278 9.987965794E-01 0.0000000E+00 9.9879658E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  23 /  23
+      67     0.15509 9.987783569E-01 0.0000000E+00 9.9877836E-01 2.7000000E+09  0
+      68     0.15741 9.987601347E-01 0.0000000E+00 9.9876013E-01 2.7000000E+09  0
+      69     0.15972 9.987419129E-01 0.0000000E+00 9.9874191E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  24 /  24
+      70     0.16204 9.987236914E-01 0.0000000E+00 9.9872369E-01 2.7000000E+09  0
+      71     0.16435 9.987054702E-01 0.0000000E+00 9.9870547E-01 2.7000000E+09  0
+      72     0.16667 9.986872493E-01 0.0000000E+00 9.9868725E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   5 /   5
+      WRT_FLT -- wrote float history fields into time record =  25 /  25
+      73     0.16898 9.986690288E-01 0.0000000E+00 9.9866903E-01 2.7000000E+09  0
+      74     0.17130 9.986508087E-01 0.0000000E+00 9.9865081E-01 2.7000000E+09  0
+      75     0.17361 9.986325888E-01 0.0000000E+00 9.9863259E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  26 /  26
+      76     0.17593 9.986143693E-01 0.0000000E+00 9.9861437E-01 2.7000000E+09  0
+      77     0.17824 9.985961501E-01 0.0000000E+00 9.9859615E-01 2.7000000E+09  0
+      78     0.18056 9.985779313E-01 0.0000000E+00 9.9857793E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  27 /  27
+      79     0.18287 9.985597128E-01 0.0000000E+00 9.9855971E-01 2.7000000E+09  0
+      80     0.18519 9.985414946E-01 0.0000000E+00 9.9854149E-01 2.7000000E+09  0
+      81     0.18750 9.985232767E-01 0.0000000E+00 9.9852328E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  28 /  28
+      82     0.18981 9.985050592E-01 0.0000000E+00 9.9850506E-01 2.7000000E+09  0
+      83     0.19213 9.984868420E-01 0.0000000E+00 9.9848684E-01 2.7000000E+09  0
+      84     0.19444 9.984686252E-01 0.0000000E+00 9.9846863E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  29 /  29
+      85     0.19676 9.984504087E-01 0.0000000E+00 9.9845041E-01 2.7000000E+09  0
+      86     0.19907 9.984321925E-01 0.0000000E+00 9.9843219E-01 2.7000000E+09  0
+      87     0.20139 9.984139766E-01 0.0000000E+00 9.9841398E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  30 /  30
+      88     0.20370 9.983957611E-01 0.0000000E+00 9.9839576E-01 2.7000000E+09  0
+      89     0.20602 9.983775459E-01 0.0000000E+00 9.9837755E-01 2.7000000E+09  0
+      90     0.20833 9.983593310E-01 0.0000000E+00 9.9835933E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   6 /   6
+      WRT_FLT -- wrote float history fields into time record =  31 /  31
+      91     0.21065 9.983411165E-01 0.0000000E+00 9.9834112E-01 2.7000000E+09  0
+      92     0.21296 9.983229023E-01 0.0000000E+00 9.9832290E-01 2.7000000E+09  0
+      93     0.21528 9.983046885E-01 0.0000000E+00 9.9830469E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  32 /  32
+      94     0.21759 9.982864749E-01 0.0000000E+00 9.9828647E-01 2.7000000E+09  0
+      95     0.21991 9.982682617E-01 0.0000000E+00 9.9826826E-01 2.7000000E+09  0
+      96     0.22222 9.982500489E-01 0.0000000E+00 9.9825005E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  33 /  33
+      97     0.22454 9.982318363E-01 0.0000000E+00 9.9823184E-01 2.7000000E+09  0
+      98     0.22685 9.982136241E-01 0.0000000E+00 9.9821362E-01 2.7000000E+09  0
+      99     0.22917 9.981954123E-01 0.0000000E+00 9.9819541E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  34 /  34
+     100     0.23148 9.981772007E-01 0.0000000E+00 9.9817720E-01 2.7000000E+09  0
+     101     0.23380 9.981589895E-01 0.0000000E+00 9.9815899E-01 2.7000000E+09  0
+     102     0.23611 9.981407786E-01 0.0000000E+00 9.9814078E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  35 /  35
+     103     0.23843 9.981225681E-01 0.0000000E+00 9.9812257E-01 2.7000000E+09  0
+     104     0.24074 9.981043579E-01 0.0000000E+00 9.9810436E-01 2.7000000E+09  0
+     105     0.24306 9.980861480E-01 0.0000000E+00 9.9808615E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  36 /  36
+     106     0.24537 9.980679385E-01 0.0000000E+00 9.9806794E-01 2.7000000E+09  0
+     107     0.24769 9.980497293E-01 0.0000000E+00 9.9804973E-01 2.7000000E+09  0
+     108     0.25000 9.980315204E-01 0.0000000E+00 9.9803152E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   7 /   7
+      WRT_FLT -- wrote float history fields into time record =  37 /  37
+     109     0.25231 9.980133119E-01 0.0000000E+00 9.9801331E-01 2.7000000E+09  0
+     110     0.25463 9.979951036E-01 0.0000000E+00 9.9799510E-01 2.7000000E+09  0
+     111     0.25694 9.979768958E-01 0.0000000E+00 9.9797690E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  38 /  38
+     112     0.25926 9.979586882E-01 0.0000000E+00 9.9795869E-01 2.7000000E+09  0
+     113     0.26157 9.979404810E-01 0.0000000E+00 9.9794048E-01 2.7000000E+09  0
+     114     0.26389 9.979222741E-01 0.0000000E+00 9.9792227E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  39 /  39
+     115     0.26620 9.979040676E-01 0.0000000E+00 9.9790407E-01 2.7000000E+09  0
+     116     0.26852 9.978858613E-01 0.0000000E+00 9.9788586E-01 2.7000000E+09  0
+     117     0.27083 9.978676554E-01 0.0000000E+00 9.9786766E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  40 /  40
+     118     0.27315 9.978494499E-01 0.0000000E+00 9.9784945E-01 2.7000000E+09  0
+     119     0.27546 9.978312447E-01 0.0000000E+00 9.9783124E-01 2.7000000E+09  0
+     120     0.27778 9.978130398E-01 0.0000000E+00 9.9781304E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  41 /  41
+     121     0.28009 9.977948352E-01 0.0000000E+00 9.9779484E-01 2.7000000E+09  0
+     122     0.28241 9.977766310E-01 0.0000000E+00 9.9777663E-01 2.7000000E+09  0
+     123     0.28472 9.977584271E-01 0.0000000E+00 9.9775843E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  42 /  42
+     124     0.28704 9.977402235E-01 0.0000000E+00 9.9774022E-01 2.7000000E+09  0
+     125     0.28935 9.977220203E-01 0.0000000E+00 9.9772202E-01 2.7000000E+09  0
+     126     0.29167 9.977038174E-01 0.0000000E+00 9.9770382E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   8 /   8
+      WRT_FLT -- wrote float history fields into time record =  43 /  43
+     127     0.29398 9.976856148E-01 0.0000000E+00 9.9768561E-01 2.7000000E+09  0
+     128     0.29630 9.976674126E-01 0.0000000E+00 9.9766741E-01 2.7000000E+09  0
+     129     0.29861 9.976492107E-01 0.0000000E+00 9.9764921E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  44 /  44
+     130     0.30093 9.976310091E-01 0.0000000E+00 9.9763101E-01 2.7000000E+09  0
+     131     0.30324 9.976128079E-01 0.0000000E+00 9.9761281E-01 2.7000000E+09  0
+     132     0.30556 9.975946070E-01 0.0000000E+00 9.9759461E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  45 /  45
+     133     0.30787 9.975764064E-01 0.0000000E+00 9.9757641E-01 2.7000000E+09  0
+     134     0.31019 9.975582062E-01 0.0000000E+00 9.9755821E-01 2.7000000E+09  0
+     135     0.31250 9.975400062E-01 0.0000000E+00 9.9754001E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  46 /  46
+     136     0.31481 9.975218067E-01 0.0000000E+00 9.9752181E-01 2.7000000E+09  0
+     137     0.31713 9.975036074E-01 0.0000000E+00 9.9750361E-01 2.7000000E+09  0
+     138     0.31944 9.974854085E-01 0.0000000E+00 9.9748541E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  47 /  47
+     139     0.32176 9.974672099E-01 0.0000000E+00 9.9746721E-01 2.7000000E+09  0
+     140     0.32407 9.974490117E-01 0.0000000E+00 9.9744901E-01 2.7000000E+09  0
+     141     0.32639 9.974308138E-01 0.0000000E+00 9.9743081E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  48 /  48
+     142     0.32870 9.974126162E-01 0.0000000E+00 9.9741262E-01 2.7000000E+09  0
+     143     0.33102 9.973944189E-01 0.0000000E+00 9.9739442E-01 2.7000000E+09  0
+     144     0.33333 9.973762220E-01 0.0000000E+00 9.9737622E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =   9 /   9
+      WRT_FLT -- wrote float history fields into time record =  49 /  49
+     145     0.33565 9.973580254E-01 0.0000000E+00 9.9735803E-01 2.7000000E+09  0
+     146     0.33796 9.973398292E-01 0.0000000E+00 9.9733983E-01 2.7000000E+09  0
+     147     0.34028 9.973216332E-01 0.0000000E+00 9.9732163E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  50 /  50
+     148     0.34259 9.973034376E-01 0.0000000E+00 9.9730344E-01 2.7000000E+09  0
+     149     0.34491 9.972852424E-01 0.0000000E+00 9.9728524E-01 2.7000000E+09  0
+     150     0.34722 9.972670474E-01 0.0000000E+00 9.9726705E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  51 /  51
+     151     0.34954 9.972488528E-01 0.0000000E+00 9.9724885E-01 2.7000000E+09  0
+     152     0.35185 9.972306586E-01 0.0000000E+00 9.9723066E-01 2.7000000E+09  0
+     153     0.35417 9.972124646E-01 0.0000000E+00 9.9721246E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  52 /  52
+     154     0.35648 9.971942710E-01 0.0000000E+00 9.9719427E-01 2.7000000E+09  0
+     155     0.35880 9.971760778E-01 0.0000000E+00 9.9717608E-01 2.7000000E+09  0
+     156     0.36111 9.971578848E-01 0.0000000E+00 9.9715788E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  53 /  53
+     157     0.36343 9.971396922E-01 0.0000000E+00 9.9713969E-01 2.7000000E+09  0
+     158     0.36574 9.971214999E-01 0.0000000E+00 9.9712150E-01 2.7000000E+09  0
+     159     0.36806 9.971033080E-01 0.0000000E+00 9.9710331E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  54 /  54
+     160     0.37037 9.970851164E-01 0.0000000E+00 9.9708512E-01 2.7000000E+09  0
+     161     0.37269 9.970669251E-01 0.0000000E+00 9.9706693E-01 2.7000000E+09  0
+     162     0.37500 9.970487342E-01 0.0000000E+00 9.9704873E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  10 /  10
+      WRT_FLT -- wrote float history fields into time record =  55 /  55
+     163     0.37731 9.970305435E-01 0.0000000E+00 9.9703054E-01 2.7000000E+09  0
+     164     0.37963 9.970123533E-01 0.0000000E+00 9.9701235E-01 2.7000000E+09  0
+     165     0.38194 9.969941633E-01 0.0000000E+00 9.9699416E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  56 /  56
+     166     0.38426 9.969759737E-01 0.0000000E+00 9.9697597E-01 2.7000000E+09  0
+     167     0.38657 9.969577844E-01 0.0000000E+00 9.9695778E-01 2.7000000E+09  0
+     168     0.38889 9.969395955E-01 0.0000000E+00 9.9693960E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  57 /  57
+     169     0.39120 9.969214068E-01 0.0000000E+00 9.9692141E-01 2.7000000E+09  0
+     170     0.39352 9.969032185E-01 0.0000000E+00 9.9690322E-01 2.7000000E+09  0
+     171     0.39583 9.968850306E-01 0.0000000E+00 9.9688503E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  58 /  58
+     172     0.39815 9.968668429E-01 0.0000000E+00 9.9686684E-01 2.7000000E+09  0
+     173     0.40046 9.968486556E-01 0.0000000E+00 9.9684866E-01 2.7000000E+09  0
+     174     0.40278 9.968304687E-01 0.0000000E+00 9.9683047E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  59 /  59
+     175     0.40509 9.968122821E-01 0.0000000E+00 9.9681228E-01 2.7000000E+09  0
+     176     0.40741 9.967940957E-01 0.0000000E+00 9.9679410E-01 2.7000000E+09  0
+     177     0.40972 9.967759098E-01 0.0000000E+00 9.9677591E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  60 /  60
+     178     0.41204 9.967577241E-01 0.0000000E+00 9.9675772E-01 2.7000000E+09  0
+     179     0.41435 9.967395388E-01 0.0000000E+00 9.9673954E-01 2.7000000E+09  0
+     180     0.41667 9.967213539E-01 0.0000000E+00 9.9672135E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  11 /  11
+      WRT_FLT -- wrote float history fields into time record =  61 /  61
+     181     0.41898 9.967031692E-01 0.0000000E+00 9.9670317E-01 2.7000000E+09  0
+     182     0.42130 9.966849849E-01 0.0000000E+00 9.9668498E-01 2.7000000E+09  0
+     183     0.42361 9.966668009E-01 0.0000000E+00 9.9666680E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  62 /  62
+     184     0.42593 9.966486173E-01 0.0000000E+00 9.9664862E-01 2.7000000E+09  0
+     185     0.42824 9.966304340E-01 0.0000000E+00 9.9663043E-01 2.7000000E+09  0
+     186     0.43056 9.966122510E-01 0.0000000E+00 9.9661225E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  63 /  63
+     187     0.43287 9.965940683E-01 0.0000000E+00 9.9659407E-01 2.7000000E+09  0
+     188     0.43519 9.965758860E-01 0.0000000E+00 9.9657589E-01 2.7000000E+09  0
+     189     0.43750 9.965577040E-01 0.0000000E+00 9.9655770E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  64 /  64
+     190     0.43981 9.965395224E-01 0.0000000E+00 9.9653952E-01 2.7000000E+09  0
+     191     0.44213 9.965213410E-01 0.0000000E+00 9.9652134E-01 2.7000000E+09  0
+     192     0.44444 9.965031600E-01 0.0000000E+00 9.9650316E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  65 /  65
+     193     0.44676 9.964849794E-01 0.0000000E+00 9.9648498E-01 2.7000000E+09  0
+     194     0.44907 9.964667991E-01 0.0000000E+00 9.9646680E-01 2.7000000E+09  0
+     195     0.45139 9.964486191E-01 0.0000000E+00 9.9644862E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  66 /  66
+     196     0.45370 9.964304394E-01 0.0000000E+00 9.9643044E-01 2.7000000E+09  0
+     197     0.45602 9.964122601E-01 0.0000000E+00 9.9641226E-01 2.7000000E+09  0
+     198     0.45833 9.963940811E-01 0.0000000E+00 9.9639408E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  12 /  12
+      WRT_FLT -- wrote float history fields into time record =  67 /  67
+     199     0.46065 9.963759024E-01 0.0000000E+00 9.9637590E-01 2.7000000E+09  0
+     200     0.46296 9.963577240E-01 0.0000000E+00 9.9635772E-01 2.7000000E+09  0
+     201     0.46528 9.963395460E-01 0.0000000E+00 9.9633955E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  68 /  68
+     202     0.46759 9.963213684E-01 0.0000000E+00 9.9632137E-01 2.7000000E+09  0
+     203     0.46991 9.963031910E-01 0.0000000E+00 9.9630319E-01 2.7000000E+09  0
+     204     0.47222 9.962850140E-01 0.0000000E+00 9.9628501E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  69 /  69
+     205     0.47454 9.962668373E-01 0.0000000E+00 9.9626684E-01 2.7000000E+09  0
+     206     0.47685 9.962486610E-01 0.0000000E+00 9.9624866E-01 2.7000000E+09  0
+     207     0.47917 9.962304850E-01 0.0000000E+00 9.9623048E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  70 /  70
+     208     0.48148 9.962123093E-01 0.0000000E+00 9.9621231E-01 2.7000000E+09  0
+     209     0.48380 9.961941339E-01 0.0000000E+00 9.9619413E-01 2.7000000E+09  0
+     210     0.48611 9.961759589E-01 0.0000000E+00 9.9617596E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  71 /  71
+     211     0.48843 9.961577842E-01 0.0000000E+00 9.9615778E-01 2.7000000E+09  0
+     212     0.49074 9.961396098E-01 0.0000000E+00 9.9613961E-01 2.7000000E+09  0
+     213     0.49306 9.961214358E-01 0.0000000E+00 9.9612144E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  72 /  72
+     214     0.49537 9.961032621E-01 0.0000000E+00 9.9610326E-01 2.7000000E+09  0
+     215     0.49769 9.960850887E-01 0.0000000E+00 9.9608509E-01 2.7000000E+09  0
+     216     0.50000 9.960669157E-01 0.0000000E+00 9.9606692E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  13 /  13
+      WRT_FLT -- wrote float history fields into time record =  73 /  73
+     217     0.50231 9.960487430E-01 0.0000000E+00 9.9604874E-01 2.7000000E+09  0
+     218     0.50463 9.960305706E-01 0.0000000E+00 9.9603057E-01 2.7000000E+09  0
+     219     0.50694 9.960123986E-01 0.0000000E+00 9.9601240E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  74 /  74
+     220     0.50926 9.959942269E-01 0.0000000E+00 9.9599423E-01 2.7000000E+09  0
+     221     0.51157 9.959760555E-01 0.0000000E+00 9.9597606E-01 2.7000000E+09  0
+     222     0.51389 9.959578845E-01 0.0000000E+00 9.9595788E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  75 /  75
+     223     0.51620 9.959397138E-01 0.0000000E+00 9.9593971E-01 2.7000000E+09  0
+     224     0.51852 9.959215434E-01 0.0000000E+00 9.9592154E-01 2.7000000E+09  0
+     225     0.52083 9.959033733E-01 0.0000000E+00 9.9590337E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  76 /  76
+     226     0.52315 9.958852036E-01 0.0000000E+00 9.9588520E-01 2.7000000E+09  0
+     227     0.52546 9.958670342E-01 0.0000000E+00 9.9586703E-01 2.7000000E+09  0
+     228     0.52778 9.958488652E-01 0.0000000E+00 9.9584887E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  77 /  77
+     229     0.53009 9.958306964E-01 0.0000000E+00 9.9583070E-01 2.7000000E+09  0
+     230     0.53241 9.958125280E-01 0.0000000E+00 9.9581253E-01 2.7000000E+09  0
+     231     0.53472 9.957943600E-01 0.0000000E+00 9.9579436E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  78 /  78
+     232     0.53704 9.957761922E-01 0.0000000E+00 9.9577619E-01 2.7000000E+09  0
+     233     0.53935 9.957580249E-01 0.0000000E+00 9.9575802E-01 2.7000000E+09  0
+     234     0.54167 9.957398578E-01 0.0000000E+00 9.9573986E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  14 /  14
+      WRT_FLT -- wrote float history fields into time record =  79 /  79
+     235     0.54398 9.957216910E-01 0.0000000E+00 9.9572169E-01 2.7000000E+09  0
+     236     0.54630 9.957035246E-01 0.0000000E+00 9.9570352E-01 2.7000000E+09  0
+     237     0.54861 9.956853586E-01 0.0000000E+00 9.9568536E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  80 /  80
+     238     0.55093 9.956671928E-01 0.0000000E+00 9.9566719E-01 2.7000000E+09  0
+     239     0.55324 9.956490274E-01 0.0000000E+00 9.9564903E-01 2.7000000E+09  0
+     240     0.55556 9.956308623E-01 0.0000000E+00 9.9563086E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  81 /  81
+     241     0.55787 9.956126976E-01 0.0000000E+00 9.9561270E-01 2.7000000E+09  0
+     242     0.56019 9.955945332E-01 0.0000000E+00 9.9559453E-01 2.7000000E+09  0
+     243     0.56250 9.955763691E-01 0.0000000E+00 9.9557637E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  82 /  82
+     244     0.56481 9.955582053E-01 0.0000000E+00 9.9555821E-01 2.7000000E+09  0
+     245     0.56713 9.955400419E-01 0.0000000E+00 9.9554004E-01 2.7000000E+09  0
+     246     0.56944 9.955218788E-01 0.0000000E+00 9.9552188E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  83 /  83
+     247     0.57176 9.955037161E-01 0.0000000E+00 9.9550372E-01 2.7000000E+09  0
+     248     0.57407 9.954855536E-01 0.0000000E+00 9.9548555E-01 2.7000000E+09  0
+     249     0.57639 9.954673915E-01 0.0000000E+00 9.9546739E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  84 /  84
+     250     0.57870 9.954492298E-01 0.0000000E+00 9.9544923E-01 2.7000000E+09  0
+     251     0.58102 9.954310684E-01 0.0000000E+00 9.9543107E-01 2.7000000E+09  0
+     252     0.58333 9.954129072E-01 0.0000000E+00 9.9541291E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  15 /  15
+      WRT_FLT -- wrote float history fields into time record =  85 /  85
+     253     0.58565 9.953947465E-01 0.0000000E+00 9.9539475E-01 2.7000000E+09  0
+     254     0.58796 9.953765860E-01 0.0000000E+00 9.9537659E-01 2.7000000E+09  0
+     255     0.59028 9.953584259E-01 0.0000000E+00 9.9535843E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  86 /  86
+     256     0.59259 9.953402662E-01 0.0000000E+00 9.9534027E-01 2.7000000E+09  0
+     257     0.59491 9.953221067E-01 0.0000000E+00 9.9532211E-01 2.7000000E+09  0
+     258     0.59722 9.953039476E-01 0.0000000E+00 9.9530395E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  87 /  87
+     259     0.59954 9.952857888E-01 0.0000000E+00 9.9528579E-01 2.7000000E+09  0
+     260     0.60185 9.952676304E-01 0.0000000E+00 9.9526763E-01 2.7000000E+09  0
+     261     0.60417 9.952494722E-01 0.0000000E+00 9.9524947E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  88 /  88
+     262     0.60648 9.952313145E-01 0.0000000E+00 9.9523131E-01 2.7000000E+09  0
+     263     0.60880 9.952131570E-01 0.0000000E+00 9.9521316E-01 2.7000000E+09  0
+     264     0.61111 9.951949999E-01 0.0000000E+00 9.9519500E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  89 /  89
+     265     0.61343 9.951768431E-01 0.0000000E+00 9.9517684E-01 2.7000000E+09  0
+     266     0.61574 9.951586866E-01 0.0000000E+00 9.9515869E-01 2.7000000E+09  0
+     267     0.61806 9.951405305E-01 0.0000000E+00 9.9514053E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  90 /  90
+     268     0.62037 9.951223747E-01 0.0000000E+00 9.9512237E-01 2.7000000E+09  0
+     269     0.62269 9.951042192E-01 0.0000000E+00 9.9510422E-01 2.7000000E+09  0
+     270     0.62500 9.950860641E-01 0.0000000E+00 9.9508606E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  16 /  16
+      WRT_FLT -- wrote float history fields into time record =  91 /  91
+     271     0.62731 9.950679093E-01 0.0000000E+00 9.9506791E-01 2.7000000E+09  0
+     272     0.62963 9.950497548E-01 0.0000000E+00 9.9504975E-01 2.7000000E+09  0
+     273     0.63194 9.950316006E-01 0.0000000E+00 9.9503160E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  92 /  92
+     274     0.63426 9.950134468E-01 0.0000000E+00 9.9501345E-01 2.7000000E+09  0
+     275     0.63657 9.949952933E-01 0.0000000E+00 9.9499529E-01 2.7000000E+09  0
+     276     0.63889 9.949771402E-01 0.0000000E+00 9.9497714E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  93 /  93
+     277     0.64120 9.949589874E-01 0.0000000E+00 9.9495899E-01 2.7000000E+09  0
+     278     0.64352 9.949408349E-01 0.0000000E+00 9.9494083E-01 2.7000000E+09  0
+     279     0.64583 9.949226827E-01 0.0000000E+00 9.9492268E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  94 /  94
+     280     0.64815 9.949045309E-01 0.0000000E+00 9.9490453E-01 2.7000000E+09  0
+     281     0.65046 9.948863794E-01 0.0000000E+00 9.9488638E-01 2.7000000E+09  0
+     282     0.65278 9.948682282E-01 0.0000000E+00 9.9486823E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  95 /  95
+     283     0.65509 9.948500774E-01 0.0000000E+00 9.9485008E-01 2.7000000E+09  0
+     284     0.65741 9.948319269E-01 0.0000000E+00 9.9483193E-01 2.7000000E+09  0
+     285     0.65972 9.948137767E-01 0.0000000E+00 9.9481378E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  96 /  96
+     286     0.66204 9.947956269E-01 0.0000000E+00 9.9479563E-01 2.7000000E+09  0
+     287     0.66435 9.947774774E-01 0.0000000E+00 9.9477748E-01 2.7000000E+09  0
+     288     0.66667 9.947593282E-01 0.0000000E+00 9.9475933E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  17 /  17
+      WRT_FLT -- wrote float history fields into time record =  97 /  97
+     289     0.66898 9.947411794E-01 0.0000000E+00 9.9474118E-01 2.7000000E+09  0
+     290     0.67130 9.947230308E-01 0.0000000E+00 9.9472303E-01 2.7000000E+09  0
+     291     0.67361 9.947048827E-01 0.0000000E+00 9.9470488E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  98 /  98
+     292     0.67593 9.946867348E-01 0.0000000E+00 9.9468673E-01 2.7000000E+09  0
+     293     0.67824 9.946685873E-01 0.0000000E+00 9.9466859E-01 2.7000000E+09  0
+     294     0.68056 9.946504401E-01 0.0000000E+00 9.9465044E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record =  99 /  99
+     295     0.68287 9.946322932E-01 0.0000000E+00 9.9463229E-01 2.7000000E+09  0
+     296     0.68519 9.946141467E-01 0.0000000E+00 9.9461415E-01 2.7000000E+09  0
+     297     0.68750 9.945960005E-01 0.0000000E+00 9.9459600E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 100 / 100
+     298     0.68981 9.945778546E-01 0.0000000E+00 9.9457785E-01 2.7000000E+09  0
+     299     0.69213 9.945597091E-01 0.0000000E+00 9.9455971E-01 2.7000000E+09  0
+     300     0.69444 9.945415639E-01 0.0000000E+00 9.9454156E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 101 / 101
+     301     0.69676 9.945234190E-01 0.0000000E+00 9.9452342E-01 2.7000000E+09  0
+     302     0.69907 9.945052745E-01 0.0000000E+00 9.9450527E-01 2.7000000E+09  0
+     303     0.70139 9.944871303E-01 0.0000000E+00 9.9448713E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 102 / 102
+     304     0.70370 9.944689864E-01 0.0000000E+00 9.9446899E-01 2.7000000E+09  0
+     305     0.70602 9.944508428E-01 0.0000000E+00 9.9445084E-01 2.7000000E+09  0
+     306     0.70833 9.944326996E-01 0.0000000E+00 9.9443270E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  18 /  18
+      WRT_FLT -- wrote float history fields into time record = 103 / 103
+     307     0.71065 9.944145567E-01 0.0000000E+00 9.9441456E-01 2.7000000E+09  0
+     308     0.71296 9.943964142E-01 0.0000000E+00 9.9439641E-01 2.7000000E+09  0
+     309     0.71528 9.943782720E-01 0.0000000E+00 9.9437827E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 104 / 104
+     310     0.71759 9.943601301E-01 0.0000000E+00 9.9436013E-01 2.7000000E+09  0
+     311     0.71991 9.943419885E-01 0.0000000E+00 9.9434199E-01 2.7000000E+09  0
+     312     0.72222 9.943238473E-01 0.0000000E+00 9.9432385E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 105 / 105
+     313     0.72454 9.943057064E-01 0.0000000E+00 9.9430571E-01 2.7000000E+09  0
+     314     0.72685 9.942875658E-01 0.0000000E+00 9.9428757E-01 2.7000000E+09  0
+     315     0.72917 9.942694256E-01 0.0000000E+00 9.9426943E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 106 / 106
+     316     0.73148 9.942512857E-01 0.0000000E+00 9.9425129E-01 2.7000000E+09  0
+     317     0.73380 9.942331461E-01 0.0000000E+00 9.9423315E-01 2.7000000E+09  0
+     318     0.73611 9.942150068E-01 0.0000000E+00 9.9421501E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 107 / 107
+     319     0.73843 9.941968679E-01 0.0000000E+00 9.9419687E-01 2.7000000E+09  0
+     320     0.74074 9.941787293E-01 0.0000000E+00 9.9417873E-01 2.7000000E+09  0
+     321     0.74306 9.941605911E-01 0.0000000E+00 9.9416059E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 108 / 108
+     322     0.74537 9.941424532E-01 0.0000000E+00 9.9414245E-01 2.7000000E+09  0
+     323     0.74769 9.941243156E-01 0.0000000E+00 9.9412432E-01 2.7000000E+09  0
+     324     0.75000 9.941061783E-01 0.0000000E+00 9.9410618E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  19 /  19
+      WRT_FLT -- wrote float history fields into time record = 109 / 109
+     325     0.75231 9.940880414E-01 0.0000000E+00 9.9408804E-01 2.7000000E+09  0
+     326     0.75463 9.940699048E-01 0.0000000E+00 9.9406990E-01 2.7000000E+09  0
+     327     0.75694 9.940517685E-01 0.0000000E+00 9.9405177E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 110 / 110
+     328     0.75926 9.940336326E-01 0.0000000E+00 9.9403363E-01 2.7000000E+09  0
+     329     0.76157 9.940154970E-01 0.0000000E+00 9.9401550E-01 2.7000000E+09  0
+     330     0.76389 9.939973617E-01 0.0000000E+00 9.9399736E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 111 / 111
+     331     0.76620 9.939792267E-01 0.0000000E+00 9.9397923E-01 2.7000000E+09  0
+     332     0.76852 9.939610921E-01 0.0000000E+00 9.9396109E-01 2.7000000E+09  0
+     333     0.77083 9.939429578E-01 0.0000000E+00 9.9394296E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 112 / 112
+     334     0.77315 9.939248239E-01 0.0000000E+00 9.9392482E-01 2.7000000E+09  0
+     335     0.77546 9.939066903E-01 0.0000000E+00 9.9390669E-01 2.7000000E+09  0
+     336     0.77778 9.938885570E-01 0.0000000E+00 9.9388856E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 113 / 113
+     337     0.78009 9.938704240E-01 0.0000000E+00 9.9387042E-01 2.7000000E+09  0
+     338     0.78241 9.938522914E-01 0.0000000E+00 9.9385229E-01 2.7000000E+09  0
+     339     0.78472 9.938341591E-01 0.0000000E+00 9.9383416E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 114 / 114
+     340     0.78704 9.938160271E-01 0.0000000E+00 9.9381603E-01 2.7000000E+09  0
+     341     0.78935 9.937978955E-01 0.0000000E+00 9.9379790E-01 2.7000000E+09  0
+     342     0.79167 9.937797642E-01 0.0000000E+00 9.9377976E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  20 /  20
+      WRT_FLT -- wrote float history fields into time record = 115 / 115
+     343     0.79398 9.937616332E-01 0.0000000E+00 9.9376163E-01 2.7000000E+09  0
+     344     0.79630 9.937435026E-01 0.0000000E+00 9.9374350E-01 2.7000000E+09  0
+     345     0.79861 9.937253723E-01 0.0000000E+00 9.9372537E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 116 / 116
+     346     0.80093 9.937072423E-01 0.0000000E+00 9.9370724E-01 2.7000000E+09  0
+     347     0.80324 9.936891126E-01 0.0000000E+00 9.9368911E-01 2.7000000E+09  0
+     348     0.80556 9.936709833E-01 0.0000000E+00 9.9367098E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 117 / 117
+     349     0.80787 9.936528543E-01 0.0000000E+00 9.9365285E-01 2.7000000E+09  0
+     350     0.81019 9.936347256E-01 0.0000000E+00 9.9363473E-01 2.7000000E+09  0
+     351     0.81250 9.936165973E-01 0.0000000E+00 9.9361660E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 118 / 118
+     352     0.81481 9.935984693E-01 0.0000000E+00 9.9359847E-01 2.7000000E+09  0
+     353     0.81713 9.935803417E-01 0.0000000E+00 9.9358034E-01 2.7000000E+09  0
+     354     0.81944 9.935622143E-01 0.0000000E+00 9.9356221E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 119 / 119
+     355     0.82176 9.935440873E-01 0.0000000E+00 9.9354409E-01 2.7000000E+09  0
+     356     0.82407 9.935259606E-01 0.0000000E+00 9.9352596E-01 2.7000000E+09  0
+     357     0.82639 9.935078343E-01 0.0000000E+00 9.9350783E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 120 / 120
+     358     0.82870 9.934897083E-01 0.0000000E+00 9.9348971E-01 2.7000000E+09  0
+     359     0.83102 9.934715826E-01 0.0000000E+00 9.9347158E-01 2.7000000E+09  0
+     360     0.83333 9.934534572E-01 0.0000000E+00 9.9345346E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  21 /  21
+      WRT_FLT -- wrote float history fields into time record = 121 / 121
+     361     0.83565 9.934353322E-01 0.0000000E+00 9.9343533E-01 2.7000000E+09  0
+     362     0.83796 9.934172075E-01 0.0000000E+00 9.9341721E-01 2.7000000E+09  0
+     363     0.84028 9.933990832E-01 0.0000000E+00 9.9339908E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 122 / 122
+     364     0.84259 9.933809591E-01 0.0000000E+00 9.9338096E-01 2.7000000E+09  0
+     365     0.84491 9.933628354E-01 0.0000000E+00 9.9336284E-01 2.7000000E+09  0
+     366     0.84722 9.933447121E-01 0.0000000E+00 9.9334471E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 123 / 123
+     367     0.84954 9.933265890E-01 0.0000000E+00 9.9332659E-01 2.7000000E+09  0
+     368     0.85185 9.933084663E-01 0.0000000E+00 9.9330847E-01 2.7000000E+09  0
+     369     0.85417 9.932903440E-01 0.0000000E+00 9.9329034E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 124 / 124
+     370     0.85648 9.932722219E-01 0.0000000E+00 9.9327222E-01 2.7000000E+09  0
+     371     0.85880 9.932541002E-01 0.0000000E+00 9.9325410E-01 2.7000000E+09  0
+     372     0.86111 9.932359788E-01 0.0000000E+00 9.9323598E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 125 / 125
+     373     0.86343 9.932178578E-01 0.0000000E+00 9.9321786E-01 2.7000000E+09  0
+     374     0.86574 9.931997370E-01 0.0000000E+00 9.9319974E-01 2.7000000E+09  0
+     375     0.86806 9.931816166E-01 0.0000000E+00 9.9318162E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 126 / 126
+     376     0.87037 9.931634966E-01 0.0000000E+00 9.9316350E-01 2.7000000E+09  0
+     377     0.87269 9.931453768E-01 0.0000000E+00 9.9314538E-01 2.7000000E+09  0
+     378     0.87500 9.931272574E-01 0.0000000E+00 9.9312726E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  22 /  22
+      WRT_FLT -- wrote float history fields into time record = 127 / 127
+     379     0.87731 9.931091384E-01 0.0000000E+00 9.9310914E-01 2.7000000E+09  0
+     380     0.87963 9.930910196E-01 0.0000000E+00 9.9309102E-01 2.7000000E+09  0
+     381     0.88194 9.930729012E-01 0.0000000E+00 9.9307290E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 128 / 128
+     382     0.88426 9.930547832E-01 0.0000000E+00 9.9305478E-01 2.7000000E+09  0
+     383     0.88657 9.930366654E-01 0.0000000E+00 9.9303667E-01 2.7000000E+09  0
+     384     0.88889 9.930185480E-01 0.0000000E+00 9.9301855E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 129 / 129
+     385     0.89120 9.930004309E-01 0.0000000E+00 9.9300043E-01 2.7000000E+09  0
+     386     0.89352 9.929823141E-01 0.0000000E+00 9.9298231E-01 2.7000000E+09  0
+     387     0.89583 9.929641977E-01 0.0000000E+00 9.9296420E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 130 / 130
+     388     0.89815 9.929460816E-01 0.0000000E+00 9.9294608E-01 2.7000000E+09  0
+     389     0.90046 9.929279659E-01 0.0000000E+00 9.9292797E-01 2.7000000E+09  0
+     390     0.90278 9.929098504E-01 0.0000000E+00 9.9290985E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 131 / 131
+     391     0.90509 9.928917353E-01 0.0000000E+00 9.9289174E-01 2.7000000E+09  0
+     392     0.90741 9.928736205E-01 0.0000000E+00 9.9287362E-01 2.7000000E+09  0
+     393     0.90972 9.928555061E-01 0.0000000E+00 9.9285551E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 132 / 132
+     394     0.91204 9.928373920E-01 0.0000000E+00 9.9283739E-01 2.7000000E+09  0
+     395     0.91435 9.928192782E-01 0.0000000E+00 9.9281928E-01 2.7000000E+09  0
+     396     0.91667 9.928011648E-01 0.0000000E+00 9.9280116E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  23 /  23
+      WRT_FLT -- wrote float history fields into time record = 133 / 133
+     397     0.91898 9.927830516E-01 0.0000000E+00 9.9278305E-01 2.7000000E+09  0
+     398     0.92130 9.927649388E-01 0.0000000E+00 9.9276494E-01 2.7000000E+09  0
+     399     0.92361 9.927468264E-01 0.0000000E+00 9.9274683E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 134 / 134
+     400     0.92593 9.927287143E-01 0.0000000E+00 9.9272871E-01 2.7000000E+09  0
+     401     0.92824 9.927106025E-01 0.0000000E+00 9.9271060E-01 2.7000000E+09  0
+     402     0.93056 9.926924910E-01 0.0000000E+00 9.9269249E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 135 / 135
+     403     0.93287 9.926743799E-01 0.0000000E+00 9.9267438E-01 2.7000000E+09  0
+     404     0.93519 9.926562690E-01 0.0000000E+00 9.9265627E-01 2.7000000E+09  0
+     405     0.93750 9.926381586E-01 0.0000000E+00 9.9263816E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 136 / 136
+     406     0.93981 9.926200484E-01 0.0000000E+00 9.9262005E-01 2.7000000E+09  0
+     407     0.94213 9.926019386E-01 0.0000000E+00 9.9260194E-01 2.7000000E+09  0
+     408     0.94444 9.925838291E-01 0.0000000E+00 9.9258383E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 137 / 137
+     409     0.94676 9.925657200E-01 0.0000000E+00 9.9256572E-01 2.7000000E+09  0
+     410     0.94907 9.925476111E-01 0.0000000E+00 9.9254761E-01 2.7000000E+09  0
+     411     0.95139 9.925295026E-01 0.0000000E+00 9.9252950E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 138 / 138
+     412     0.95370 9.925113945E-01 0.0000000E+00 9.9251139E-01 2.7000000E+09  0
+     413     0.95602 9.924932866E-01 0.0000000E+00 9.9249329E-01 2.7000000E+09  0
+     414     0.95833 9.924751791E-01 0.0000000E+00 9.9247518E-01 2.7000000E+09  0
+      WRT_HIS -- wrote history fields into time record =  24 /  24
+      WRT_FLT -- wrote float history fields into time record = 139 / 139
+     415     0.96065 9.924570720E-01 0.0000000E+00 9.9245707E-01 2.7000000E+09  0
+     416     0.96296 9.924389651E-01 0.0000000E+00 9.9243897E-01 2.7000000E+09  0
+     417     0.96528 9.924208586E-01 0.0000000E+00 9.9242086E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 140 / 140
+     418     0.96759 9.924027524E-01 0.0000000E+00 9.9240275E-01 2.7000000E+09  0
+     419     0.96991 9.923846466E-01 0.0000000E+00 9.9238465E-01 2.7000000E+09  0
+     420     0.97222 9.923665411E-01 0.0000000E+00 9.9236654E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 141 / 141
+     421     0.97454 9.923484359E-01 0.0000000E+00 9.9234844E-01 2.7000000E+09  0
+     422     0.97685 9.923303310E-01 0.0000000E+00 9.9233033E-01 2.7000000E+09  0
+     423     0.97917 9.923122265E-01 0.0000000E+00 9.9231223E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 142 / 142
+     424     0.98148 9.922941223E-01 0.0000000E+00 9.9229412E-01 2.7000000E+09  0
+     425     0.98380 9.922760184E-01 0.0000000E+00 9.9227602E-01 2.7000000E+09  0
+     426     0.98611 9.922579149E-01 0.0000000E+00 9.9225791E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 143 / 143
+     427     0.98843 9.922398117E-01 0.0000000E+00 9.9223981E-01 2.7000000E+09  0
+     428     0.99074 9.922217088E-01 0.0000000E+00 9.9222171E-01 2.7000000E+09  0
+     429     0.99306 9.922036062E-01 0.0000000E+00 9.9220361E-01 2.7000000E+09  0
+      WRT_FLT -- wrote float history fields into time record = 144 / 144
+     430     0.99537 9.921855040E-01 0.0000000E+00 9.9218550E-01 2.7000000E+09  0
+     431     0.99769 9.921674021E-01 0.0000000E+00 9.9216740E-01 2.7000000E+09  0
+     432     1.00000 9.921493006E-01 0.0000000E+00 9.9214930E-01 2.7000000E+09  0
+      DEF_RST - Created new netCDF file 'output/rst.nc'.
+      WRT_GRID -- wrote grid data into file 'output/rst.nc'.
+      WRT_RST -- wrote restart fields into time record =   1 /   1
+      WRT_HIS -- wrote history fields into time record =  25 /  25
+      WRT_FLT -- wrote float history fields into time record = 145 / 145
+
+ MAIN - number of records written into history  file(s):   25
+        number of records written into restart  file(s):    1
+        number of records written into floats   file(s):  145
+
+
+ MAIN: DONE
+
