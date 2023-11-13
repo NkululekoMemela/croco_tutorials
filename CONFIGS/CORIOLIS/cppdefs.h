@@ -35,7 +35,11 @@
 /* Other options */
 #define FLOATS
 
+# define NO_FRCFILE
+# undef  RVTK_DEBUG
+
 # endif
+
 
 /*
 **------------------------------------------------------
@@ -45,3 +49,4 @@
 
 #include "cppdefs_dev.h"
 #include "set_global_definitions.h"
+
